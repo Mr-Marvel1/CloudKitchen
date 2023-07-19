@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: 'Overpass', sans-serif;
+    top: 10px;
+}
+
+#logo {
+    margin: 15px 35px;
+
+}
+
+#logo img {
+    margin: 5px 8px;
+    height: 55px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Overpass', sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.35;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 935px;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/background/bg.1.jpg') no-repeat center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h-primary {
+    font-size: 3rem;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: 2px solid black;
+    background-color: rgb(213, 59, 59);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41
+}
+
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.center {
+    text-align: center;
+}
+
+#services {
+    margin: 35px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid grey;
+    padding: 35px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(239, 213, 174);
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Overpass', sans-serif;
+}
+
+#client-section {
+    height: 470px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+}
+
+.client-item {
+    padding: 50px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/background/pexels-jane-doan-1092730.jpg') no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../img/contact.1.jpg') no-repeat center center;
+    /* box-sizing: border-box; */
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 30px;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Overpass', sans-serif;
+}
