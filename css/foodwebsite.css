@@ -54,10 +54,6 @@
 
 }
 
-#navbar ul li a:hover {
-    color: black;
-    background-color: white;
-}
 
 #home {
     display: flex;
